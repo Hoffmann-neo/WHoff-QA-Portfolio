@@ -67,10 +67,10 @@ Aplicação web pública utilizada para fins de estudo e automação:
 │   └── test_search_record.py
 │
 ├── pages/
-│   └── webtables_page.py
+│   └── mapeamentos_page.py
 │
-├── fixtures/
-│   └── browser_setup.py
+├── pages_objects/
+│   └── objetosgerais.py
 │
 ├── reports/
 ├── requirements.txt
