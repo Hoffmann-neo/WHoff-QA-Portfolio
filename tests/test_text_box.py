@@ -10,3 +10,4 @@ def test_text_box(page):
         endereco_permanente='Av goularte camara'
     )
     text_box.botao_submit.click()
+    page.pause()
