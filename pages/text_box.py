@@ -1,10 +1,11 @@
 from page_objects.objetosgerais import ObjetosGerais
 
+
 class TextBox(ObjetosGerais):
 
     def acessar_text_box(self):
         self.page.goto(
-                'https://demoqa.com/text-box')
+            'https://demoqa.com/text-box')
         self.page.wait_for_load_state()
 
     def __init__(self, page):

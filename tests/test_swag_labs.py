@@ -1,5 +1,6 @@
 from pages.swaglbs import SwagLabs
 
+
 def test_login(page):
     login = SwagLabs(page)
     login.acessar_swag_labs()
@@ -8,7 +9,7 @@ def test_login(page):
         password='secret_sauce',
     )
     page.pause()
-    meus_produtos =[
+    meus_produtos = [
         "Sauce Labs Fleece Jacket",
         "Test.allTheThings() T-Shirt (Red)",
         "Sauce Labs Bolt T-Shirt"
@@ -18,8 +19,3 @@ def test_login(page):
         lista_itens=meus_produtos
     )
     page.pause()
-
-    compra.conferir_carrinho_compras()
-    compra.validar_valores(
-        validar=
-    )

@@ -1,11 +1,12 @@
 from page_objects.objetosgerais import ObjetosGerais
 from playwright.sync_api import expect
 
+
 class SwagLabs(ObjetosGerais):
 
     def acessar_swag_labs(self):
         self.page.goto(
-                'https://www.saucedemo.com/')
+            'https://www.saucedemo.com/')
         self.page.wait_for_load_state()
 
     def __init__(self, page):
@@ -16,8 +17,8 @@ class SwagLabs(ObjetosGerais):
         self.item_produto_name = page.locator(".inventory_item_name")
 
     def criar_login(self,
-              username,
-              password):
+                    username,
+                    password):
         if username:
             self.campo_username.fill(username)
             self.campo_password.press('Tab')
