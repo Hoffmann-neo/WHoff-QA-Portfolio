@@ -1,4 +1,4 @@
-from pages.swaglbs import SwagLabs
+from Python_Playwright.pages.swaglbs import SwagLabs
 
 def test_login(page):
     """

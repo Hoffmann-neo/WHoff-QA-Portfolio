@@ -1,4 +1,4 @@
-from pages.demoqa import WebTables
+from Python_Playwright.pages.demoqa import WebTables
 
 
 def test_crud_web_tables(page):
