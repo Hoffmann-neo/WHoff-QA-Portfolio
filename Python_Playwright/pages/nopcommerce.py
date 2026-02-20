@@ -191,7 +191,6 @@ class Produtos(NopCommerce):
         self.botao_iphone_16 = page.get_by_role("link", name="Apple iPhone 16 128GB").nth(3)
         self.botao_add_carrinho = page.locator("#add-to-cart-button-21")
 
-    def produtos(self):
 
 
 
