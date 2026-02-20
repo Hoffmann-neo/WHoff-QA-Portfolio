@@ -1,79 +1,120 @@
 # Em construção
 
-# 🧪 QA Automation Portfolio – Python + Playwright
+🧪 QA Automation Portfolio – Python + Playwright
 
-Portfólio de **automação de testes para aplicações web**, desenvolvido com **Python e Playwright**, com foco em qualidade, boas práticas e integração com pipelines de CI/CD.
+Projeto de automação de testes End-to-End (E2E) desenvolvido com Python, Playwright e Pytest, aplicando boas práticas de qualidade de software e arquitetura escalável baseada em Page Object Model (POM).
 
-Este projeto demonstra minha experiência prática como **QA**, atuando desde a criação dos testes até a análise de falhas e manutenção da automação.
+Este repositório simula um ambiente real de times de QA, incluindo organização modular, reutilização de componentes, e preparação para integração contínua (CI/CD).
 
----
+🎯 Objetivo
 
-## 🎯 Objetivo do Projeto
+Automatizar fluxos críticos de aplicações web
 
-- Demonstrar conhecimento em **automação de testes E2E**
-- Aplicar boas práticas de **QA e organização de testes**
-- Simular um ambiente próximo ao real de empresas
-- Criar um portfólio técnico para apresentação profissional
+Garantir cobertura funcional com cenários positivos e negativos
 
----
+Aplicar boas práticas de arquitetura de testes
 
-## 🧰 Tecnologias Utilizadas
+Simular estrutura profissional utilizada em empresas
 
-- **Python**
-- **Playwright**
-- **Pytest**
-- **Git / GitHub**
-- **Jenkins (CI/CD)**
-- **Page Object Model (POM)**
+🧰 Stack Utilizada
 
----
+Python
 
-## 🌐 Sistema Testado
+Playwright
 
-Aplicação web pública utilizada para fins de estudo e automação:
+Pytest
 
-🔗 https://demoqa.com/webtables
-🔗 https://www.saucedemo.com
+Page Object Model (POM)
 
----
+Git / GitHub
 
-## 🧪 Tipos de Testes Implementados
+Jenkins (Pipeline CI/CD)
 
-- Testes Funcionais
-- Testes End-to-End (E2E)
-- Testes de Regressão
-- Testes Smoke
-- Cenários Positivos e Negativos
+Execução headless e headed
 
----
+Configuração via pytest.ini
 
-## 📋 Cenários Automatizados
+Fixtures globais com conftest.py
 
-- ✔️ Acesso à página
-- ✔️ Inclusão de registros (Create)
-- ✔️ Edição de registros (Update)
-- ✔️ Exclusão de registros (Delete)
-- ✔️ Busca e filtragem de dados
-- ✔️ Validações de dados exibidos em tela
+🌐 Sistemas Automatizados
 
----
+Aplicações públicas utilizadas para estudo:
 
-## 📁 Estrutura do Projeto
+https://demoqa.com
 
-```text
+https://www.saucedemo.com
+
+🧪 Estratégia de Testes
+
+O projeto contempla:
+
+✔ Testes Funcionais
+
+✔ Testes End-to-End (E2E)
+
+✔ Testes de Regressão
+
+✔ Testes Smoke
+
+✔ Cenários Positivos e Negativos
+
+✔ Validação de mensagens de erro
+
+✔ Validação de regras de negócio
+
+✔ Manipulação de DOM e validações dinâmicas
+
+📋 Exemplos de Cenários Automatizados
+
+CRUD completo (Create, Read, Update, Delete)
+
+Fluxo de login válido e inválido
+
+Adição de produto ao carrinho
+
+Validação de dados exibidos em tabela
+
+Filtros e busca de registros
+
+Validação de mensagens de erro
+
+🏗 Arquitetura do Projeto
+
+O projeto segue o padrão Page Object Model (POM) para garantir:
+
+Separação entre lógica de teste e mapeamento de elementos
+
+Reutilização de componentes
+
+Facilidade de manutenção
+
+Escalabilidade
+
+Estrutura:
+
+Python_Playwright/
+│
 ├── tests/
-│   ├── test_add_record.py
-│   ├── test_edit_record.py
-│   ├── test_delete_record.py
-│   └── test_search_record.py
+│   ├── demoqa/
+│   ├── nopcommerce/
+│   └── swaglabs/
 │
 ├── pages/
-│   └── mapeamentos_page.py
 │
-├── pages_objects/
-│   └── objetosgerais.py
-│
-├── reports/
-├── requirements.txt
+├── conftest.py
 ├── pytest.ini
 └── README.md
+🚀 Execução dos Testes
+
+Instalar dependências:
+
+pip install -r requirements.txt
+playwright install
+
+Executar testes:
+
+pytest
+
+Executar em modo headed:
+
+pytest --headed
