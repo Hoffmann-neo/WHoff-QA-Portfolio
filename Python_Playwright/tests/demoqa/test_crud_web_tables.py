@@ -44,6 +44,7 @@ def test_crud_web_tables(page):
     #-------------------
     webtables = WebTables(page)
     webtables.acessar_demoqa()
+    page.pause()
     webtables.acessar_web_tables()
     webtables.botao_add.click()
     webtables.preencher_web_tables(

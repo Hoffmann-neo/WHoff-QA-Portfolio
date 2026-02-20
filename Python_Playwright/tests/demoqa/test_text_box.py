@@ -16,6 +16,9 @@ def test_text_box(page):
     text_box = TextBox(page)
     text_box.acessar_demoqa()
     text_box.acessar_text_box()
+    # -------------------
+    #   Cadastrar
+    # -------------------
     text_box.preencher_text_box(
         nome='Teste de fulano',
         email='fulano@gmail.com',
@@ -23,6 +26,9 @@ def test_text_box(page):
         endereco_permanente='Av goularte camara'
     )
     text_box.botao_submit.click()
+    # -------------------
+    #   Validar Informações
+    # -------------------
     text_box.validar_grid(
         grid_locator="#output",
         esperado={'name': 'Teste de fulano', 'email': 'fulano@gmail.com', 'currentaddress': 'Rua cecilia capital',

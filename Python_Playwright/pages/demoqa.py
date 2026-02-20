@@ -1,4 +1,4 @@
-from Python_Playwright.page_objects.objetosgerais import ObjetosGerais
+from Python_Playwright.pages.objetosgerais import ObjetosGerais
 
 
 class DemoQA(ObjetosGerais):

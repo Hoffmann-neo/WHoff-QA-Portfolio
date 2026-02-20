@@ -1,6 +1,6 @@
 from Python_Playwright.pages.swaglbs import SwagLabs
 
-def test_login(page):
+def test_comprar(page):
     """
     - Acessar site: saucedemo
     - Efetuar login
