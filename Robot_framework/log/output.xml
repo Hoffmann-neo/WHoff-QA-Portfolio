@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.14.2 on win32)" generated="2026-02-24T14:31:11.743781" rpa="false" schemaversion="5">
+<suite id="s1" name="Test" source="D:\Python_QA_Portifolio\Robot_framework\Tests\test.robot">
+<test id="s1-t1" name="Validar Login com Erro" line="15">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-02-24T14:31:11.936314" level="INFO">Opening browser 'chrome' to base url 'https://automationexercise.com/login'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-24T14:31:11.935994" elapsed="1.867487"/>
+</kw>
+<kw name="Preencher Login" owner="autexercise">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-24T14:31:13.805102" level="INFO">Typing text 'email@exemplo.com' into text field 'css=[data-qa="login-email"]'.</msg>
+<arg>${LOGAR_EMAIL_CAMPO}</arg>
+<arg>${EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-24T14:31:13.804691" elapsed="0.075748"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-24T14:31:13.881026" level="INFO">Typing text '123456' into text field 'css=[data-qa="login-password"]'.</msg>
+<arg>${LOGAR_SENHA_CAMPO}</arg>
+<arg>${SENHA}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-24T14:31:13.880724" elapsed="0.047739"/>
+</kw>
+<arg>email@exemplo.com</arg>
+<arg>123456</arg>
+<status status="PASS" start="2026-02-24T14:31:13.804073" elapsed="0.124563"/>
+</kw>
+<kw name="Clicar No Botao Login" owner="autexercise">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-02-24T14:31:13.929339" level="INFO">Clicking button 'css=[data-qa="login-button"]'.</msg>
+<arg>${CONECTAR_BOTAO}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-24T14:31:13.929125" elapsed="0.051407"/>
+</kw>
+<status status="PASS" start="2026-02-24T14:31:13.928840" elapsed="0.051875"/>
+</kw>
+<kw name="Validar Mensagem de Erro" owner="autexercise">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${AVISO_ERRO_LOGIN}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-24T14:31:13.981181" elapsed="0.355354"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2026-02-24T14:31:14.349883" level="INFO">Element 'xpath=//p[contains(text(), 'Your email or password is incorrect!')]' contains text 'Your email or password is incorrect!'.</msg>
+<arg>${AVISO_ERRO_LOGIN}</arg>
+<arg>Your email or password is incorrect!</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="PASS" start="2026-02-24T14:31:14.336756" elapsed="0.013320"/>
+</kw>
+<status status="PASS" start="2026-02-24T14:31:13.980917" elapsed="0.369283"/>
+</kw>
+<status status="PASS" start="2026-02-24T14:31:11.935020" elapsed="2.415329"/>
+</test>
+<status status="PASS" start="2026-02-24T14:31:11.752559" elapsed="2.598309"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Test" id="s1" pass="1" fail="0" skip="0">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

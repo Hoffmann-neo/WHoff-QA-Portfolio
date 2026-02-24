@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.14.2 on win32)" generated="2026-02-24T13:26:48.060001" rpa="false" schemaversion="5">
+<suite id="s1" name="Test" source="D:\Python_QA_Portifolio\Robot_framework\Tests\test.robot">
+<test id="s1-t1" name="Validar Login com Sucesso" line="16">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-02-24T13:26:48.273653" level="INFO">Opening browser 'chrome' to base url 'https://automationexercise.com'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-24T13:26:48.273325" elapsed="2.797507"/>
+</kw>
+<kw name="Pause Execution" owner="Dialogs">
+<doc>Pauses execution until user clicks ``Ok`` button.</doc>
+<status status="PASS" start="2026-02-24T13:26:51.071146" elapsed="2.675844"/>
+</kw>
+<status status="PASS" start="2026-02-24T13:26:48.272356" elapsed="5.474902"/>
+</test>
+<status status="PASS" start="2026-02-24T13:26:48.068906" elapsed="5.678898"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Test" id="s1" pass="1" fail="0" skip="0">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
