@@ -1,3 +1,5 @@
+Em desenvolvimento
+
 🧪 Portfólio de Automação de QA – Multi-Framework (Python + Playwright | Robot Framework)
 Este repositório contém meu portfólio pessoal de automação de testes End-to-End (E2E), aplicando boas práticas de engenharia de software, arquitetura escalável e padrões de projeto como Page Object Model (POM) e Keyword Driven Development (KDD).
 
