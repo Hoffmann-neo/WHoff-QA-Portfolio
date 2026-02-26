@@ -6,18 +6,6 @@ class ObjetosGerais:
 
     def __init__(self, page):
         self.page = page
-        self.botao_submit = page.locator('#submit')
-        self.botao_login = page.locator('#login-button')
-        self.botao_add_to_cart = page.locator('#add-to-cart')
-        self.botao_voltar = page.locator('#back-to-products')
-        self.botao_carrinho_compras = page.locator('#shopping_cart_container')
-        self.botao_back_home = page.locator('#back-to-products')
-        self.botao_continue = page.locator('#continue')
-        self.botao_finish = page.locator('#finish')
-        self.botao_add = page.locator('#addNewRecordButton')
-        self.botao_editar = page.locator('#edit-record')
-        self.botao_excluir = page.locator('#delete-record')
-
 
     def validar_grid(
         self,
