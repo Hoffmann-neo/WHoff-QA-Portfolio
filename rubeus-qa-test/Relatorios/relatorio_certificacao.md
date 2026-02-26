@@ -11,8 +11,10 @@ Realizar avaliação exploratória e funcional das páginas informadas, identifi
 
 ## 🐞 Item 01 – Campo Telefone permite caracteres inválidos
 
-**Tipo:** Correção  
-**Classificação:** Utilidade  
+**Tipo:** Correção
+
+**Classificação:** Utilidade 
+
 **Prioridade:** Alta  
 
 ### 📄 Descrição
@@ -22,10 +24,12 @@ O campo "Telefone" permite a inserção de caracteres alfabéticos e quantidade 
 Pode gerar armazenamento de dados inconsistentes e comprometer a integridade das informações cadastradas.
 
 ### 💡 Sugestão
-Implementar validação para permitir apenas caracteres numéricos e limitar a quantidade de dígitos conforme regra de negócio.
+Implementar validação para permitir apenas caracteres numéricos e limitar a quantidade de dígitos conforme
+regra de negócio.
 
 ### 🧪 Teste Automatizado
 Foi criado teste automatizado cobrindo este cenário:
+
 Caminho:rubeus-qa-test/tests/certificacao/test_cadastro.py
 Nome do test: test_inscricao_nao_deve_aceitar_telefone_com_letras
 
@@ -39,19 +43,23 @@ O teste valida o comportamento atual identificado como defeito.
 ## 🐞 Item 02 – Ao efetuar a Inscrição Mensagem de erro 
 
 **Tipo:** Correção
+
 **Classificação:** Utilidade
+
 **Prioridade:** Alta
 
 ### 📄 Descrição
-Ao inserir dados corretos e efetuar cadastro sistema informa menssagem "É necessário informar a base legal".
+O inserir dados corretos e efetuar o cadastro, o sistema exibe a mensagem: "É necessário informar a base legal".
 
 ### 🎯 Impacto
 Usuário não efetuar cadastro.
 
 ### 🧪 Teste Automatizado
 Foi criado teste automatizado cobrindo este cenário:
-Caminho:rubeus-qa-test/tests/certificacao/test_cadastro.py
+Caminho:rubeus-qa-test/tests/certificacao/test_inscricao.py
 Nome do test: test_inscricao
+
+
 
 ### 📸 Evidência
 ![Erro Email](./images/Screenshot_2.jpg)
@@ -61,11 +69,14 @@ Nome do test: test_inscricao
 ## 🐞 Item 03 – Botao "Quero me certificar" Rodapé
 
 **Tipo:** Correção  
+
 **Classificação:** Utilidade
+
 **Prioridade:** Alta
 
 ### 📄 Descrição
-Botões "Quero me certificar" estao com links errados, o icono do rodapé, conforme print esta com link do google, os outros estao com link do site Rebeus
+Os botões "Quero me certificar" apresentam links incorretos. O ícone do rodapé, conforme o print, está direcionando
+para o Google, enquanto os demais botões levam ao site da Rubeus.
 
 ### 🎯 Impacto
 Usuário pode confundir o usuario.
@@ -78,11 +89,13 @@ Usuário pode confundir o usuario.
 ## 🐞 Item 04 – "Botão Saiba mais" sem funcionalidade
 
 **Tipo:** Correção  
+
 **Classificação:** Utilidade
+
 **Prioridade:** Média  
 
 ### 📄 Descrição
-Botão SAIBA MAIS não esta com link fixado para mais informações
+Botão "SAIBA MAIS" não está com link fixado para mais informações
 
 ### 🎯 Impacto
 Usuário pode ficar frustrado com erro não encontrar as devidas informações.
@@ -93,10 +106,12 @@ Usuário pode ficar frustrado com erro não encontrar as devidas informações.
 
 ---
 
-## 🐞 Item 05 – Erros de digitação na seção "Outros Cursos"
+## 🐞 Item 05 – Erros de digitação na sessão "Outros Cursos"
 
 **Tipo:** Correção  
+
 **Classificação:** Desejabilidade  
+
 **Prioridade:** Média  
 
 ### 📄 Descrição
@@ -119,11 +134,13 @@ Padronizar o texto para "Saiba mais".
 ## 🐞 Item 06 – Melhoria no campo Outros Cursos
 
 **Tipo:** Melhoria
+
 **Classificação:** Desejabilidade
+
 **Prioridade:** Media
 
 ### 📄 Descrição
-As setas do campo outros cursos não estão vinculadas a nenhum link
+As setas do campo outros cursos não estão vinculadas a nenhum link.
 
 ### 🎯 Impacto
 Usuário melhorar o marketing para novos clientes
@@ -136,41 +153,46 @@ Criar paginas modelo para outros cursos
 
 ---
 
-## 🐞 Item 07 – Ajuste icone rodapé do Youtube
+## 🐞 Item 07 – Ajuste ícone rodapé do Youtube
 
 **Tipo:** Melhoria
+
 **Classificação:** Desejabilidade
+
 **Prioridade:** baixa
 
 ### 📄 Descrição
-No icone no rodapé Youtube esta com link do Tiktok
-ajustar o link correto do youtube ou substituir o icone para o tiktok
+No ícone no rodapé Youtube esta com link do Tiktok
+ajustar o link correto do youtube ou substituir o ícone para o tiktok
 
 ### 🎯 Impacto
 Usuário melhorar o marketing para novos clientes
 
 ### 💡 Sugestão
-Adicionar substituir o incone do youtube pelo tiktok, ou adicionar tiktok e youtube nio rodapé
+Adicionar substituir o ícone do youtube pelo tiktok, ou adicionar tiktok e youtube nio rodapé
 
 ### 📸 Evidência
 ![Erro mapeamento](./images/Screenshot_6.jpg)
 
 ---
 
-## 🐞 Item 08 – Padronizar icones da faculdade
+## 🐞 Item 08 – Padronizar ícones da faculdade
 
 **Tipo:** Melhoria
+
 **Classificação:** Desejabilidade
+
 **Prioridade:** baixa
 
 ### 📄 Descrição
-No icone no rodapé "Simbolo da universidade" nao esta padronizado com o do cabeçalho
+No ícone no rodapé "Simbolo da universidade" não está padronizado com o do cabeçalho
 
 ### 🎯 Impacto
 Usuário melhorar o marketing para novos clientes
 
 ### 💡 Sugestão
-Padronizar os icones com simbolo e nome da Faculdade Exemplo, incone tambem poderia ser um link para encaminhar o cliente para pagina inicial 
+Padronizar os ícones simbolo e nome da Faculdade Exemplo, ícone também poderia ser um link para encaminhar o cliente
+para pagina inicial 
 
 ### 📸 Evidência
 ![Erro padronização](./images/Screenshot_7.jpg)
@@ -180,12 +202,14 @@ Padronizar os icones com simbolo e nome da Faculdade Exemplo, incone tambem pode
 ## 🐞 Item 09 – Sugestão de melhoria na abordagem textual
 
 **Tipo:** Melhoria  
+
 **Classificação:** Desejabilidade  
+
 **Prioridade:** Baixa  
 
 ### 📄 Descrição
 Alguns textos da página podem ser ajustados para utilizar uma linguagem mais institucional e alinhada ao contexto acadêmico.
-Analisar em manter um padrão de alinhamento textuam configurado para "Justificados"
+Analisar a viabilidade de manter um padrão de alinhamento textual configurado como "Justificado".
 
 Sugestões de melhoria:
 
@@ -203,7 +227,9 @@ Trata-se de sugestão de aprimoramento da experiência do usuário, não caracte
 ## 🐞 Item 10 – Sugestão de melhoria na apresentação da foto
 
 **Tipo:** Melhoria  
+
 **Classificação:** Desejabilidade  
+
 **Prioridade:** Baixa  
 
 ### 📄 Descrição

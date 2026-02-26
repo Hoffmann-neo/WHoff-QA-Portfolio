@@ -6,6 +6,10 @@ class ObjetosGerais:
 
     def __init__(self, page):
         self.page = page
+        self.campo_nome = page.locator('[name="pessoa.nome"]')
+        self.campo_telefone = page.get_by_placeholder("(11) 96123-")
+        self.campo_email = page.locator('[name="pessoa.emailPrincipal"]')
+
 
     def validar_grid(
         self,

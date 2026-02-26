@@ -1,5 +1,5 @@
 from pages.objetosgerais import ObjetosGerais
-from pages.certificacao.certificacao import Incricao
+from pages.certificacao.certificacao import Inscricao
 
 def test_inscricao(page):
     """
@@ -28,9 +28,9 @@ def test_inscricao(page):
     - Clicar em "Avançar"
     - Validar exibição da mensagem de erro
     """
-    inscricao = Incricao(page)
+    inscricao = Inscricao(page)
     inscricao.acessar_certificacao()
-    inscricao.fazer_incricao(
+    inscricao.fazer_inscricao(
         nome='Teste Fulano Beltrano',
         telefone='51919191919',
         email='Fulano@gmail.com'
@@ -65,10 +65,10 @@ def test_inscricao_nao_deve_aceitar_telefone_com_letras(page):
     - Validar exibição da mensagem de erro
     """
 
-    inscricao = Incricao(page)
+    inscricao = Inscricao(page)
     inscricao.acessar_certificacao()
     page.pause()
-    inscricao.fazer_incricao(
+    inscricao.fazer_inscricao(
         nome='Teste QA',
         telefone='5192899978ss',
         email='teste@email.com'
