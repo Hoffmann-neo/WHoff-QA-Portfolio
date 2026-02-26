@@ -1,122 +1,80 @@
-🧪 QA Automation Portfolio – Python + Playwright
+Em desenvolvimento
 
-Projeto de automação de testes End-to-End (E2E) desenvolvido com Python, Playwright e Pytest, aplicando boas práticas de qualidade de software e arquitetura escalável baseada em Page Object Model (POM).
+🧪 Portfólio de Automação de QA – Multi-Framework (Python + Playwright | Robot Framework)
+Este repositório contém meu portfólio pessoal de automação de testes End-to-End (E2E), aplicando boas práticas de engenharia de software, arquitetura escalável e padrões de projeto como Page Object Model (POM) e Keyword Driven Development (KDD).
 
-Este repositório simula um ambiente real de times de QA, incluindo organização modular, reutilização de componentes, e preparação para integração contínua (CI/CD).
+O projeto simula um ambiente real de QA, com foco em manutenção facilitada, reutilização de código e relatórios detalhados.
 
-🎯 Objetivo
+🎯 Objetivos do Projeto
+Automatizar fluxos críticos em diferentes tecnologias de automação.
 
-Automatizar fluxos críticos de aplicações web
+Garantir cobertura funcional com cenários positivos e negativos.
 
-Garantir cobertura funcional com cenários positivos e negativos
+Demonstrar proficiência tanto em frameworks baseados em código (Playwright) quanto em keywords (Robot Framework).
 
-Aplicar boas práticas de arquitetura de testes
+Estrutura modular preparada para integração contínua (CI/CD).
 
-Simular estrutura profissional utilizada em empresas
+🧰 Stack Tecnológica
+Core
+Linguagem: Python
 
-🧰 Stack Utilizada
+Versionamento: Git / GitHub
 
-Python
+Frameworks de Automação
+Playwright + Pytest: Automação moderna com foco em performance e execução paralela.
 
-Playwright
+Robot Framework: Automação baseada em palavras-chave (KDD) com SeleniumLibrary, ideal para legibilidade e documentação técnica.
 
-Pytest
+🌐 Ecossistema de Testes (Sistemas Automatizados)
+Aplicações utilizadas para os cenários de teste:
 
-Page Object Model (POM)
+Automation Exercise (Foco atual em Robot Framework)
 
-Git / GitHub
+SauceDemo (Foco em Playwright)
 
-Jenkins (Pipeline CI/CD)
+DemoQA
 
-Execução headless e headed
+🏗 Arquitetura e Organização
+O projeto está dividido para demonstrar organização em ambas as ferramentas:
 
-Configuração via pytest.ini
+Estrutura Playwright (POM)
+Focada em classes e métodos, separando a lógica de negócio do mapeamento de elementos.
 
-Fixtures globais com conftest.py
+Estrutura Robot Framework (KDD/Layers)
+Utiliza a separação por camadas para garantir escalabilidade:
 
-🌐 Sistemas Automatizados
+Tests: Scripts de teste de alto nível.
 
-Aplicações públicas utilizadas para estudo, testes executados nas paginas:
+Resources: Arquivos .resource contendo Keywords e Variables (Mapeamento de elementos).
 
-Obs: todos testes funcionam, alguns sites podem estar fora do ar
+Results: Logs e relatórios HTML detalhados gerados automaticamente.
 
-https://demoqa.com
+🚀 Como Executar o Projeto
+Pré-requisitos
+Python 3.10+
 
-https://www.saucedemo.com
+Ambiente virtual configurado (venv)
 
-https://demo.nopcommerce.com/
-
-🧪 Estratégia de Testes
-
-O projeto contempla:
-
-✔ Testes Funcionais
-
-✔ Testes End-to-End (E2E)
-
-✔ Testes de Regressão
-
-✔ Testes Smoke
-
-✔ Cenários Positivos e Negativos
-
-✔ Validação de mensagens de erro
-
-✔ Validação de regras de negócio
-
-✔ Manipulação de DOM e validações dinâmicas
-
-📋 Exemplos de Cenários Automatizados
-
-CRUD completo (Create, Read, Update, Delete)
-
-Fluxo de login válido e inválido
-
-Adição de produto ao carrinho
-
-Validação de dados exibidos em tabela
-
-Filtros e busca de registros
-
-Validação de mensagens de erro
-
-🏗 Arquitetura do Projeto
-
-O projeto segue o padrão Page Object Model (POM) para garantir:
-
-Separação entre lógica de teste e mapeamento de elementos
-
-Reutilização de componentes
-
-Facilidade de manutenção
-
-Escalabilidade
-
-Estrutura:
-
-Python_Playwright/
-│
-├── pages/
-│   ├── sites mapeados
-
-├── tests/
-│
-├── conftest.py
-├── pytest.ini
-└── README.md
-
-
-🚀 Execução dos Testes
-
-Instalar dependências:
-
+Instalação
+Bash
 pip install -r requirements.txt
 playwright install
-
-Executar testes:
-
-pytest
-
-Executar em modo headed:
-
+Executando Testes Playwright
+Bash
 pytest --headed
+Executando Testes Robot Framework
+Bash
+robot -d ./results Tests/
+📋 Cenários Automatizados (Exemplos)
+Login & Autenticação: Fluxos de sucesso, usuário bloqueado e validação de mensagens de erro ("Your email or password is incorrect!").
+
+E-commerce: Adição de produtos ao carrinho e fluxo de checkout.
+
+Gerenciamento de Usuários: Cadastro de novos usuários (Signup) com validação de campos obrigatórios.
+
+Dicas extras para o seu GitHub:
+Corrigi o termo "Dramaturgo": O tradutor do navegador às vezes traduz Playwright para Dramaturgo, o que fica estranho em currículos. Mantenha sempre o nome original da ferramenta.
+
+Destaque os Relatórios do Robot: No Robot, você ganha o log.html e o report.html. Se puder, tire um print de um relatório verde (passando) e coloque na pasta assets do seu Git para exibir no README. Recrutadores amam ver relatórios visuais.
+
+Requirements.txt: Não esqueça de atualizar seu arquivo requirements.txt incluindo robotframework e robotframework-seleniumlibrary.
