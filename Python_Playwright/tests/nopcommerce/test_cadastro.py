@@ -1,8 +1,9 @@
-from Python_Playwright.pages.nopcommerce import LoginRegistro, MyAccount
+from pages.nopcommerce import LoginRegistro, MyAccount
 
 def test_registro(page):
     registro = LoginRegistro(page)
     registro.acessar_novo_registro()
+    page.pause()
 
     registro.adicionar_registro(
         genero= "male",
@@ -21,7 +22,6 @@ def test_adicionar_endereco(page):
         senha='123456',
     )
     login.botao_minha_conta.click()
-    page.pause()
 
     minha_conta = MyAccount(page)
     minha_conta.cadastrar_endereco(

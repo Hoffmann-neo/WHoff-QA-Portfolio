@@ -1,4 +1,4 @@
-from Python_Playwright.pages.objetosgerais import ObjetosGerais
+from pages.objetosgerais import ObjetosGerais
 from playwright.sync_api import expect
 
 class NopCommerce(ObjetosGerais):
@@ -32,6 +32,7 @@ class LoginRegistro(NopCommerce):
         self.botao_minha_conta = page.locator(".ico-account")
         self.botao_login = page.locator(".ico-login")
         self.botao_logar = page.locator(".login-button")
+        self.check_box_confirme = page.locator("iframe[src=\"https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/turnstile/f/ov2/av0/rch/irdwg/0x4AAAAAAADnPIDROrmt1Wwj/dark/fbE/new/normal?lang=auto\"]").content_frame.locator("body")
 
     def adicionar_registro(self,
                           genero: str,
@@ -77,8 +78,10 @@ class LoginRegistro(NopCommerce):
 
         self.botao_registrar.click()
         self.page.wait_for_timeout(2000)
+        expect(self.page.get_by_text("Este site utiliza um serviço ...")).to_be_visible(timeout=2000)
+        self.check_box_confirme.check()
 
-        expect(self.page.get_by_test("Your registration completed")).to_be_visible(timeout=2000)
+        expect(self.page.get_by_text("Your registration completed")).to_be_visible(timeout=2000)
         self.botao_continuar.click()
 
     def login(self, email, senha):

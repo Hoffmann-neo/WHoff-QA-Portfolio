@@ -1,4 +1,4 @@
-from Python_Playwright.pages.objetosgerais import ObjetosGerais
+from pages.objetosgerais import ObjetosGerais
 from playwright.sync_api import expect
 
 
@@ -41,15 +41,15 @@ class SwagLabs(ObjetosGerais):
             self.botao_add_to_cart.click()
             expect(self.page.get_by_text('Remove')).to_be_visible(timeout=5000)
             self.botao_voltar.click()
-            self.page.wait_for_timeout(5000)
+            self.page.wait_for_timeout(1000)
 
     def conferir_carrinho_compras(self):
         self.botao_carrinho_compras.click()
-        self.page.wait_for_load_state(timeout=5000)
+        self.page.wait_for_load_state(timeout=1000)
 
     def checkuot(self, nome='', sobrenome='', codigo_postal=''):
         self.botao_checkout.click()
-        self.page.wait_for_timeout(2000)
+        self.page.wait_for_timeout(1000)
         if nome:
             self.campo_nome.fill(nome)
         if sobrenome:
@@ -57,7 +57,7 @@ class SwagLabs(ObjetosGerais):
         if codigo_postal:
             self.campo_codigo_postal.fill(codigo_postal)
         self.botao_continue.click()
-        self.page.wait_for_timeout(2000)
+        self.page.wait_for_timeout(1000)
 
     def finalizar_carrinho_compras(self):
         self.botao_finish.click()

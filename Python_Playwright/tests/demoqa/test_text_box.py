@@ -1,4 +1,4 @@
-from Python_Playwright.pages.demoqa import TextBox
+from pages.demoqa import TextBox
 
 
 def test_text_box(page):

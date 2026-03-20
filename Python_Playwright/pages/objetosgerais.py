@@ -1,5 +1,7 @@
 from playwright.sync_api import expect
 import re
+from playwright.sync_api import sync_playwright
+
 
 
 class ObjetosGerais:
@@ -155,4 +157,3 @@ class ObjetosGerais:
             )
 
         print("\n✅ Validação concluída com sucesso")
-

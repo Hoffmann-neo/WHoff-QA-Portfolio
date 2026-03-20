@@ -1,4 +1,4 @@
-from Python_Playwright.pages.demoqa import WebTables
+from pages.demoqa import WebTables
 
 
 def test_crud_web_tables(page):
@@ -44,7 +44,6 @@ def test_crud_web_tables(page):
     #-------------------
     webtables = WebTables(page)
     webtables.acessar_demoqa()
-    page.pause()
     webtables.acessar_web_tables()
     webtables.botao_add.click()
     webtables.preencher_web_tables(
@@ -57,11 +56,10 @@ def test_crud_web_tables(page):
     )
     webtables.botao_submit.click()
     webtables.validar_grid(
-        grid_locator=".rt-tbody",
-        esperado=['cierravega39cierraexamplecom10000insurance '
-                  'aldencantrell45aldenexamplecom12000compliance '
-                  'kierragentry29kierraexamplecom2000legal '
-                  'demoqatestes31demoqagmailcom4500administrador']
+        grid_locator=".web-tables-wrapper",
+        esperado=['addfirst namelast nameageemailsalarydepartmentactioncierravega39cierraexamplecom10000insuranceal'
+                  'dencantrell45aldenexamplecom12000compliancekierragentry29kierraexamplecom2000legaldemoqatestes31'
+                  'demoqagmailcom4500administradorfirstpreviousnextlastpage 1 of 1show 10show 20show 30show 40show 50']
     )
     # -------------------
     #   Editar
@@ -81,11 +79,11 @@ def test_crud_web_tables(page):
     webtables.campo_buscar.clear()
     page.wait_for_timeout(timeout=5000)
     webtables.validar_grid(
-        grid_locator=".rt-tbody",
-        esperado=['cierravega39cierraexamplecom10000insurance '
-                  'aldencantrell45aldenexamplecom12000compliance '
-                  'kierragentry29kierraexamplecom2000legal '
-                  'demoqateste35demoqa2gmailcom4700administrador']
+        grid_locator=".web-tables-wrapper",
+        esperado=['addfirst namelast nameageemailsalarydepartmentactioncierravega39cierraexamplecom10000'
+                  'insurancealdencantrell45aldenexamplecom12000compliancekierragentry29kierraexamplecom2000'
+                  'legaldemoqateste35demoqa2gmailcom4700administradorfirstpreviousnextlastpage 1 of 1show 10show '
+                  '20show 30show 40show 50']
     )
     # -------------------
     #   Excluir
@@ -97,9 +95,8 @@ def test_crud_web_tables(page):
     webtables.campo_buscar.clear()
     page.wait_for_timeout(timeout=5000)
     webtables.validar_grid(
-        grid_locator=".rt-tbody",
-        esperado=['cierravega39cierraexamplecom10000insurance '
-                  'aldencantrell45aldenexamplecom12000compliance '
-                  'kierragentry29kierraexamplecom2000legal '
-                  ]
+        grid_locator=".web-tables-wrapper",
+        esperado=['addfirst namelast nameageemailsalarydepartmentactioncierravega39cierraexamplecom10000'
+                  'insurancealdencantrell45aldenexamplecom12000compliancekierragentry29kierraexamplecom2000'
+                  'legalfirstpreviousnextlastpage 1 of 1show 10show 20show 30show 40show 50']
     )
