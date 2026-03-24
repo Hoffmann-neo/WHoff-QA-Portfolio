@@ -1,0 +1,400 @@
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+new file mode 100644
+--- /dev/null	(date 1774013307163)
++++ b/.idea/vcs.xml	(date 1774013307163)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: ../rubeus-qa-test/.idea/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../rubeus-qa-test/.idea/.gitignore b/../rubeus-qa-test/.idea/.gitignore
+new file mode 100644
+--- /dev/null	(date 1772123053240)
++++ b/../rubeus-qa-test/.idea/.gitignore	(date 1772123053240)
+@@ -0,0 +1,5 @@
++# Default ignored files
++/shelf/
++/workspace.xml
++# Editor-based HTTP Client requests
++/httpRequests/
+Index: ../rubeus-qa-test/.idea/inspectionProfiles/profiles_settings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../rubeus-qa-test/.idea/inspectionProfiles/profiles_settings.xml b/../rubeus-qa-test/.idea/inspectionProfiles/profiles_settings.xml
+new file mode 100644
+--- /dev/null	(date 1772123053253)
++++ b/../rubeus-qa-test/.idea/inspectionProfiles/profiles_settings.xml	(date 1772123053253)
+@@ -0,0 +1,6 @@
++<component name="InspectionProjectProfileManager">
++  <settings>
++    <option name="USE_PROJECT_PROFILE" value="false" />
++    <version value="1.0" />
++  </settings>
++</component>
+\ No newline at end of file
+Index: ../rubeus-qa-test/.idea/Rubeus_QA_Test.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../rubeus-qa-test/.idea/Rubeus_QA_Test.iml b/../rubeus-qa-test/.idea/Rubeus_QA_Test.iml
+new file mode 100644
+--- /dev/null	(date 1772123053259)
++++ b/../rubeus-qa-test/.idea/Rubeus_QA_Test.iml	(date 1772123053259)
+@@ -0,0 +1,11 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="PYTHON_MODULE" version="4">
++  <component name="NewModuleRootManager">
++    <content url="file://$MODULE_DIR$" />
++    <orderEntry type="jdk" jdkName="Python 3.14 (rubeus-qa-test)" jdkType="Python SDK" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++  <component name="TestRunnerService">
++    <option name="PROJECT_TEST_RUNNER" value="py.test" />
++  </component>
++</module>
+\ No newline at end of file
+Index: ../rubeus-qa-test/.idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../rubeus-qa-test/.idea/modules.xml b/../rubeus-qa-test/.idea/modules.xml
+new file mode 100644
+--- /dev/null	(date 1772123053265)
++++ b/../rubeus-qa-test/.idea/modules.xml	(date 1772123053265)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/.idea/Rubeus_QA_Test.iml" filepath="$PROJECT_DIR$/.idea/Rubeus_QA_Test.iml" />
++    </modules>
++  </component>
++</project>
+\ No newline at end of file
+Index: ../rubeus-qa-test/.idea/.name
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../rubeus-qa-test/.idea/.name b/../rubeus-qa-test/.idea/.name
+new file mode 100644
+--- /dev/null	(date 1772123053273)
++++ b/../rubeus-qa-test/.idea/.name	(date 1772123053273)
+@@ -0,0 +1,1 @@
++Rubeus_QA_Test
+\ No newline at end of file
+Index: ../rubeus-qa-test/.idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../rubeus-qa-test/.idea/misc.xml b/../rubeus-qa-test/.idea/misc.xml
+new file mode 100644
+--- /dev/null	(date 1772123053288)
++++ b/../rubeus-qa-test/.idea/misc.xml	(date 1772123053288)
+@@ -0,0 +1,7 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="Black">
++    <option name="sdkName" value="Python 3.14 (rubeus-qa-test)" />
++  </component>
++  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.14 (rubeus-qa-test)" project-jdk-type="Python SDK" />
++</project>
+\ No newline at end of file
+Index: sql/extracao_funcionarios.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/sql/extracao_funcionarios.py b/sql/extracao_funcionarios.py
+new file mode 100644
+--- /dev/null	(date 1774360124413)
++++ b/sql/extracao_funcionarios.py	(date 1774360124413)
+@@ -0,0 +1,24 @@
++# sql/extracao_funcionarios.py
++
++# A Query que define O QUE buscar
++SELECT_FUNC = """
++    SELECT 
++         f.codigofuncpessoa
++        ,fun.codigoempresa
++        ,fun.codigofunccontr
++        ,fun.nomefunc
++    FROM funcpessoa f 
++    JOIN funcionario fun on f.codigofuncpessoa = fun.codigofuncpessoa
++"""
++
++# O Mapeamento que define COMO transformar (De -> Para)
++MAPEAMENTO_COLUNAS = {
++    'codigofuncpessoa':  'codigoFunc'
++    ,'codigoempresa':  'codempresa'
++    ,'codigofunccontr': 'fucionarion'
++    ,'nomefunc': 'nomecolabrador'
++
++}
++
++# Configurações de destino
++TABELA_DESTINO = "funcionarios"
+\ No newline at end of file
+Index: ../rubeus-qa-test/.idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../rubeus-qa-test/.idea/vcs.xml b/../rubeus-qa-test/.idea/vcs.xml
+new file mode 100644
+--- /dev/null	(date 1772123053295)
++++ b/../rubeus-qa-test/.idea/vcs.xml	(date 1772123053295)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: conect/conexao.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/conect/conexao.py b/conect/conexao.py
+new file mode 100644
+--- /dev/null	(date 1774363580782)
++++ b/conect/conexao.py	(date 1774363580782)
+@@ -0,0 +1,11 @@
++from sqlalchemy import create_engine
++
++def conexao_bd1():
++    usuario = "postgres"
++    senha = ""
++    host = ""
++    port = ""
++    banco = "postgres"
++
++    url = f'postgresql+psycopg2://{usuario}:{senha}@{host}:{port}/{banco}'
++    return create_engine(url)
+\ No newline at end of file
+Index: ../Python_Playwright/pages/objetosgerais.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>from playwright.sync_api import expect\r\nimport re\r\nfrom playwright.sync_api import sync_playwright\r\n\r\n\r\n\r\nclass ObjetosGerais:\r\n\r\n    def __init__(self, page):\r\n        self.page = page\r\n        self.botao_submit = page.locator('#submit')\r\n        self.botao_login = page.locator('#login-button')\r\n        self.botao_add_to_cart = page.locator('#add-to-cart')\r\n        self.botao_voltar = page.locator('#back-to-products')\r\n        self.botao_carrinho_compras = page.locator('#shopping_cart_container')\r\n        self.botao_back_home = page.locator('#back-to-products')\r\n        self.botao_continue = page.locator('#continue')\r\n        self.botao_finish = page.locator('#finish')\r\n        self.botao_add = page.locator('#addNewRecordButton')\r\n        self.botao_editar = page.locator('#edit-record')\r\n        self.botao_excluir = page.locator('#delete-record')\r\n\r\n\r\n    def validar_grid(\r\n        self,\r\n        grid_locator: str,\r\n        esperado,\r\n        timeout: int = 30000,\r\n        normalizar: bool = True,\r\n        parcial: bool = True\r\n    ):\r\n        \"\"\"\r\n        Valida textos dentro de qualquer container da página.\r\n\r\n        Serve para:\r\n        - tabelas\r\n        - grids\r\n        - listas\r\n        - resumos\r\n        - outputs\r\n        - carrinho\r\n        - formulários\r\n\r\n        Parâmetro \"esperado\" pode ser:\r\n\r\n        - str  → \"Texto único\"\r\n        - list → [\"Texto A\", \"Texto B\"]\r\n        - dict → {\"campo\": \"valor\"}  (usa só os valores)\r\n        \"\"\"\r\n\r\n        # =========================================\r\n        # FUNÇÃO PARA LIMPAR / PADRONIZAR TEXTO\r\n        # =========================================\r\n        def limpar(texto: str) -> str:\r\n            \"\"\"\r\n            Remove diferenças de maiúscula, espaços e símbolos.\r\n            Ajuda a evitar erro por detalhe bobo.\r\n            \"\"\"\r\n\r\n            if not normalizar:\r\n                return texto.strip()\r\n\r\n            # Tudo minúsculo\r\n            texto = texto.lower()\r\n\r\n            # Remove espaços repetidos\r\n            texto = re.sub(r\"\\s+\", \" \", texto)\r\n\r\n            # Remove símbolos estranhos\r\n            texto = re.sub(r\"[^\\w\\sáéíóúâêôãõç]\", \"\", texto)\r\n\r\n            return texto.strip()\r\n\r\n        # =========================================\r\n        # LOCALIZA O CONTAINER (GRID / DIV / BLOCO)\r\n        # =========================================\r\n        container = self.page.locator(grid_locator)\r\n\r\n        # Espera aparecer na tela\r\n        expect(container).to_be_visible(timeout=timeout)\r\n\r\n        # Pega TODO texto de dentro (mais seguro)\r\n        texto_bruto = container.text_content(timeout=timeout)\r\n\r\n        if not texto_bruto:\r\n            raise AssertionError(\"❌ Nenhum texto encontrado no container\")\r\n\r\n        # =========================================\r\n        # QUEBRA TEXTO EM LINHAS\r\n        # =========================================\r\n        linhas = [\r\n            limpar(linha)\r\n            for linha in texto_bruto.split(\"\\n\")\r\n            if linha.strip()\r\n        ]\r\n\r\n        # Texto completo em uma linha só\r\n        texto_completo = \" \".join(linhas)\r\n\r\n        # =========================================\r\n        # DEBUG → MOSTRA NO TERMINAL\r\n        # =========================================\r\n        print(\"\\n\uD83D\uDCCC Textos encontrados na tela:\")\r\n\r\n        for t in linhas:\r\n            print(\"-\", t)\r\n\r\n        # =========================================\r\n        # ORGANIZA O ESPERADO\r\n        # =========================================\r\n        esperados = []\r\n\r\n        # Se for string\r\n        if isinstance(esperado, str):\r\n            esperados = [esperado]\r\n\r\n        # Se for lista\r\n        elif isinstance(esperado, list):\r\n            esperados = esperado\r\n\r\n        # Se for dicionário → usa só valores\r\n        elif isinstance(esperado, dict):\r\n            esperados = list(esperado.values())\r\n\r\n        else:\r\n            raise TypeError(\"❌ esperado deve ser str, list ou dict\")\r\n\r\n        # Limpa todos\r\n        esperados = [limpar(e) for e in esperados]\r\n\r\n        # =========================================\r\n        # VALIDAÇÃO\r\n        # =========================================\r\n        erros = []\r\n\r\n        for valor in esperados:\r\n\r\n            # Procura dentro do texto inteiro\r\n            if parcial:\r\n                encontrado = valor in texto_completo\r\n\r\n            # Procura exatamente na lista\r\n            else:\r\n                encontrado = valor in linhas\r\n\r\n            if not encontrado:\r\n                erros.append(f\"❌ Não encontrado: {valor}\")\r\n\r\n        # =========================================\r\n        # RESULTADO FINAL\r\n        # =========================================\r\n        if erros:\r\n            raise AssertionError(\r\n                \"\\n\".join(erros)\r\n                + \"\\n\\n\uD83D\uDCCC Texto da tela:\\n\"\r\n                + texto_completo\r\n            )\r\n\r\n        print(\"\\n✅ Validação concluída com sucesso\")\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../Python_Playwright/pages/objetosgerais.py b/../Python_Playwright/pages/objetosgerais.py
+--- a/../Python_Playwright/pages/objetosgerais.py	(revision 6597f35a9c849bb3ef08086db06faf786d18fc11)
++++ b/../Python_Playwright/pages/objetosgerais.py	(date 1774362849938)
+@@ -83,7 +83,7 @@
+         texto_bruto = container.text_content(timeout=timeout)
+ 
+         if not texto_bruto:
+-            raise AssertionError("❌ Nenhum texto encontrado no container")
++            raise AssertionError(" Nenhum texto encontrado no container")
+ 
+         # =========================================
+         # QUEBRA TEXTO EM LINHAS
+@@ -100,7 +100,7 @@
+         # =========================================
+         # DEBUG → MOSTRA NO TERMINAL
+         # =========================================
+-        print("\n📌 Textos encontrados na tela:")
++        print("\n Textos encontrados na tela:")
+ 
+         for t in linhas:
+             print("-", t)
+@@ -123,7 +123,7 @@
+             esperados = list(esperado.values())
+ 
+         else:
+-            raise TypeError("❌ esperado deve ser str, list ou dict")
++            raise TypeError(" esperado deve ser str, list ou dict")
+ 
+         # Limpa todos
+         esperados = [limpar(e) for e in esperados]
+@@ -135,7 +135,7 @@
+ 
+         for valor in esperados:
+ 
+-            # Procura dentro do texto inteiro
++            # Procura dentro do
+             if parcial:
+                 encontrado = valor in texto_completo
+ 
+@@ -144,7 +144,7 @@
+                 encontrado = valor in linhas
+ 
+             if not encontrado:
+-                erros.append(f"❌ Não encontrado: {valor}")
++                erros.append(f" Não encontrado: {valor}")
+ 
+         # =========================================
+         # RESULTADO FINAL
+@@ -152,7 +152,7 @@
+         if erros:
+             raise AssertionError(
+                 "\n".join(erros)
+-                + "\n\n📌 Texto da tela:\n"
++                + "\n\n Texto da tela:\n"
+                 + texto_completo
+             )
+ 
+Index: conect/validar_conexao.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/conect/validar_conexao.py b/conect/validar_conexao.py
+new file mode 100644
+--- /dev/null	(date 1774361162368)
++++ b/conect/validar_conexao.py	(date 1774361162368)
+@@ -0,0 +1,15 @@
++# conect/conexao.py
++from sqlalchemy import text
++from conect.conexao import conexao_bd1
++
++if __name__ == "__main__":
++    print("Tentando conectar ao banco de dados...")
++    try:
++        engine = conexao_bd1()
++        with engine.connect() as conn:
++            conn.execute(text("SELECT 1"))
++            print("✅ SUCESSO: Conexão firme e forte!")
++    except Exception as e:
++        # Usamos repr(e) para ver o erro sem travar no codec de texto
++        print("❌ ERRO DE CONEXÃO:")
++        print(f"Detalhes técnicos: {repr(e)}")
+\ No newline at end of file
+Index: arquivos/logs/extracao_Funcionarios20260324.log
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/arquivos/logs/extracao_Funcionarios20260324.log b/arquivos/logs/extracao_Funcionarios20260324.log
+new file mode 100644
+--- /dev/null	(date 1774363561087)
++++ b/arquivos/logs/extracao_Funcionarios20260324.log	(date 1774363561087)
+@@ -0,0 +1,4 @@
++2026-03-24 11:46:00,944 - INFO -  Iniciando extração para a tabela: funcionarios
++2026-03-24 11:46:01,068 - INFO -  Limpeza de nomes (Title Case) aplicada.
++2026-03-24 11:46:01,071 - INFO -  Arquivo de evidência gerado em: D:\Python_QA_Portifolio\ETL_SQL_conversao\extracao\../arquivos/data_out\backup_funcionarios_20260324_114600.csv
++2026-03-24 11:46:01,087 - INFO -  SUCESSO: 3 migração efetuada com sucesso.
+Index: arquivos/data_out/backup_funcionarios_20260324_114600.csv
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/arquivos/data_out/backup_funcionarios_20260324_114600.csv b/arquivos/data_out/backup_funcionarios_20260324_114600.csv
+new file mode 100644
+--- /dev/null	(date 1774363561071)
++++ b/arquivos/data_out/backup_funcionarios_20260324_114600.csv	(date 1774363561071)
+@@ -0,0 +1,4 @@
++codigoFunc;codempresa;fucionarion;nomecolabrador
++2;846;1;Patrik Michelo
++3;846;2;Tetes
++1;2057;1;David
+Index: .idea/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/.gitignore b/.idea/.gitignore
+new file mode 100644
+--- /dev/null	(date 1774013283380)
++++ b/.idea/.gitignore	(date 1774013283380)
+@@ -0,0 +1,5 @@
++# Default ignored files
++/shelf/
++/workspace.xml
++# Editor-based HTTP Client requests
++/httpRequests/
+Index: .idea/inspectionProfiles/profiles_settings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/inspectionProfiles/profiles_settings.xml b/.idea/inspectionProfiles/profiles_settings.xml
+new file mode 100644
+--- /dev/null	(date 1774013307147)
++++ b/.idea/inspectionProfiles/profiles_settings.xml	(date 1774013307147)
+@@ -0,0 +1,6 @@
++<component name="InspectionProjectProfileManager">
++  <settings>
++    <option name="USE_PROJECT_PROFILE" value="false" />
++    <version value="1.0" />
++  </settings>
++</component>
+\ No newline at end of file
+Index: .idea/ETL_SQL_conversao.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/ETL_SQL_conversao.iml b/.idea/ETL_SQL_conversao.iml
+new file mode 100644
+--- /dev/null	(date 1774013307136)
++++ b/.idea/ETL_SQL_conversao.iml	(date 1774013307136)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="PYTHON_MODULE" version="4">
++  <component name="NewModuleRootManager">
++    <content url="file://$MODULE_DIR$" />
++    <orderEntry type="jdk" jdkName="Python 3.14 (ETL_SQL_conversao)" jdkType="Python SDK" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+Index: .idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/modules.xml b/.idea/modules.xml
+new file mode 100644
+--- /dev/null	(date 1774013307140)
++++ b/.idea/modules.xml	(date 1774013307140)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/.idea/ETL_SQL_conversao.iml" filepath="$PROJECT_DIR$/.idea/ETL_SQL_conversao.iml" />
++    </modules>
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+new file mode 100644
+--- /dev/null	(date 1774013362541)
++++ b/.idea/misc.xml	(date 1774013362541)
+@@ -0,0 +1,7 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="Black">
++    <option name="sdkName" value="Python 3.14 (ETL_SQL_conversao)" />
++  </component>
++  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.14 (ETL_SQL_conversao)" project-jdk-type="Python SDK" />
++</project>
+\ No newline at end of file
