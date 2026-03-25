@@ -11,7 +11,7 @@ def conexao_bd1():
     senha = urllib.parse.quote_plus("123456")  # Protege caracteres especiais na senha
     host = "localhost"
     porta = "5432"
-    banco = "postgres"
+    banco = "folhadepagamento"
 
     conn_string = f"postgresql+psycopg2://{usuario}:{senha}@{host}:{porta}/{banco}"
 
@@ -27,9 +27,3 @@ def conexao_bd1():
         print(f"❌ Erro ao conectar no banco de dados: {e}")
         return None
 
-
-if __name__ == "__main__":
-    # Teste isolado da conexão
-    teste_engine = conexao_bd1()
-    if teste_engine:
-        print("✅ Conexão estabelecida com sucesso!")

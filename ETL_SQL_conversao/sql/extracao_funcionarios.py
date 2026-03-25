@@ -1,19 +1,19 @@
 
 SELECT_FUNC = """
-    SELECT 
-         f.codigofuncpessoa
-        ,fun.codigoempresa
-        ,fun.codigofunccontr
-        ,fun.nomefunc
-    FROM funcpessoa f 
-    JOIN funcionario fun ON f.codigofuncpessoa = fun.codigofuncpessoa
+    SELECT
+         id_funcionario
+         ,codigo_funcionario
+         ,nome_completo
+         ,cpf
+    FROM funcionarios 
+
 """
 
 MAPEAMENTO_COLUNAS = {
-    'codigofuncpessoa': 'codigoFunc',
-    'codigoempresa':    'codempresa',
-    'codigofunccontr':  'fucionarion',
-    'nomefunc':         'nomecolabrador'
+        'id_funcionario': 'codigofunc'
+        ,'codigo_funcionario': 'matricula_esocial'
+        ,'nome_completo': 'nomecolabrador'
+        ,'cpf': 'cpf'
 }
 
 TABELA_DESTINO = "funcionarios"

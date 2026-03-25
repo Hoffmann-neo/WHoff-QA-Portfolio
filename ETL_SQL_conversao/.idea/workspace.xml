@@ -2,10 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="675ca8c7-1031-4a19-8e21-2475d15f5d5a" name="Changes" comment="ajustes">
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_24_03_2026_11_48_[Changes]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_24_03_2026_11_48__Changes_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extracao/funcionarios.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/ETL_SQL_conversao.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/arquivos/data_out/backup_funcionarios_20260325_093755.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/arquivos/logs/extracao_Funcionarios20260325.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/conect/validar_conexao.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/arquivos/data_out/backup_funcionarios_20260324_115932.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/arquivos/logs/extracao_Funcionarios20260324.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/conect/conexao.py" beforeDir="false" afterPath="$PROJECT_DIR$/conect/conexao.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/extracao_funcionarios.py" beforeDir="false" afterPath="$PROJECT_DIR$/sql/extracao_funcionarios.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,12 +55,14 @@
   &quot;keyToString&quot;: {
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;Python tests.Python tests in test_conexao.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python.conexao.executor&quot;: &quot;Run&quot;,
     &quot;Python.funcionarios.executor&quot;: &quot;Run&quot;,
     &quot;Python.validar_conexao.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Python_QA_Portifolio/ETL_SQL_conversao&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -65,6 +73,29 @@
     </key>
   </component>
   <component name="RunManager" selected="Python.funcionarios">
+    <configuration name="conexao" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ETL_SQL_conversao" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/conect" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/conect/conexao.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="funcionarios" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ETL_SQL_conversao" />
       <option name="ENV_FILES" value="" />
@@ -131,6 +162,7 @@
       <list>
         <item itemvalue="Python.funcionarios" />
         <item itemvalue="Python.validar_conexao" />
+        <item itemvalue="Python.conexao" />
         <item itemvalue="Python tests.Python tests in validar_conexao.py" />
       </list>
     </recent_temporary>

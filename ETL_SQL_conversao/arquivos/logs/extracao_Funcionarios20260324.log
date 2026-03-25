@@ -1,4 +1,0 @@
-2026-03-24 11:59:32,836 - INFO -  Iniciando extração para a tabela: funcionarios
-2026-03-24 11:59:32,872 - INFO -  Limpeza de nomes (Title Case) aplicada.
-2026-03-24 11:59:32,875 - INFO -  Arquivo de evidência gerado em: D:\Python_QA_Portifolio\ETL_SQL_conversao\extracao\../arquivos/data_out\backup_funcionarios_20260324_115932.csv
-2026-03-24 11:59:32,887 - INFO -  SUCESSO: 3 migração efetuada com sucesso.
