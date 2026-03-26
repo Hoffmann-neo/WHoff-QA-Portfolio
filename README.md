@@ -1,80 +1,34 @@
-Em desenvolvimento
+# Portfólio de QA & Engenharia de Dados 
 
-🧪 Portfólio de Automação de QA – Multi-Framework (Python + Playwright | Robot Framework)
-Este repositório contém meu portfólio pessoal de automação de testes End-to-End (E2E), aplicando boas práticas de engenharia de software, arquitetura escalável e padrões de projeto como Page Object Model (POM) e Keyword Driven Development (KDD).
+Este repositório contem testes de **Qualidade de Software** de testes automatizados E2E WEB e de  **Conversão de Dados (ETL)**.
 
-O projeto simula um ambiente real de QA, com foco em manutenção facilitada, reutilização de código e relatórios detalhados.
+## Destaques de Automação Web
 
-🎯 Objetivos do Projeto
-Automatizar fluxos críticos em diferentes tecnologias de automação.
+### 1. Automação E2E com Playwright & Pytest
 
-Garantir cobertura funcional com cenários positivos e negativos.
+Cenários focados em performance, execução paralela e estabilidade.
 
-Demonstrar proficiência tanto em frameworks baseados em código (Playwright) quanto em keywords (Robot Framework).
+### A. Demonstração de Teste Compras
 
-Estrutura modular preparada para integração contínua (CI/CD).
+![Demonstração de Teste Compras](Python_Playwright/images/test_compra.gif)
 
-🧰 Stack Tecnológica
-Core
-Linguagem: Python
+### B. Execução de test CRUD
 
-Versionamento: Git / GitHub
+![Execução de test CRUD](Python_Playwright/images/test_crud_web_tables.gif)
 
-Frameworks de Automação
-Playwright + Pytest: Automação moderna com foco em performance e execução paralela.
+### C. Cadastro e validação das informações
 
-Robot Framework: Automação baseada em palavras-chave (KDD) com SeleniumLibrary, ideal para legibilidade e documentação técnica.
+![Cadastro e validação das informações](Python_Playwright/images/test_text_box.gif)
 
-🌐 Ecossistema de Testes (Sistemas Automatizados)
-Aplicações utilizadas para os cenários de teste:
+---
 
-Automation Exercise (Foco atual em Robot Framework)
+## Conversão de Dados - Engenharia de Dados (ETL)
 
-SauceDemo (Foco em Playwright)
+Extração, Organização e alteração de dados
 
-DemoQA
+### A. Conversão de dados
 
-🏗 Arquitetura e Organização
-O projeto está dividido para demonstrar organização em ambas as ferramentas:
+![Conversão de dados](ETL_SQL_conversao/images/ETL.gif)
 
-Estrutura Playwright (POM)
-Focada em classes e métodos, separando a lógica de negócio do mapeamento de elementos.
+---
 
-Estrutura Robot Framework (KDD/Layers)
-Utiliza a separação por camadas para garantir escalabilidade:
-
-Tests: Scripts de teste de alto nível.
-
-Resources: Arquivos .resource contendo Keywords e Variables (Mapeamento de elementos).
-
-Results: Logs e relatórios HTML detalhados gerados automaticamente.
-
-🚀 Como Executar o Projeto
-Pré-requisitos
-Python 3.10+
-
-Ambiente virtual configurado (venv)
-
-Instalação
-Bash
-pip install -r requirements.txt
-playwright install
-Executando Testes Playwright
-Bash
-pytest --headed
-Executando Testes Robot Framework
-Bash
-robot -d ./results Tests/
-📋 Cenários Automatizados (Exemplos)
-Login & Autenticação: Fluxos de sucesso, usuário bloqueado e validação de mensagens de erro ("Your email or password is incorrect!").
-
-E-commerce: Adição de produtos ao carrinho e fluxo de checkout.
-
-Gerenciamento de Usuários: Cadastro de novos usuários (Signup) com validação de campos obrigatórios.
-
-Dicas extras para o seu GitHub:
-Corrigi o termo "Dramaturgo": O tradutor do navegador às vezes traduz Playwright para Dramaturgo, o que fica estranho em currículos. Mantenha sempre o nome original da ferramenta.
-
-Destaque os Relatórios do Robot: No Robot, você ganha o log.html e o report.html. Se puder, tire um print de um relatório verde (passando) e coloque na pasta assets do seu Git para exibir no README. Recrutadores amam ver relatórios visuais.
-
-Requirements.txt: Não esqueça de atualizar seu arquivo requirements.txt incluindo robotframework e robotframework-seleniumlibrary.
