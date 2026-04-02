@@ -4,6 +4,8 @@ Este repositório contem testes de **Qualidade de Software** de testes automatiz
 
 ## Destaques de Automação Web
 
+Irei apresentar passo a passo o que cada automartização Web faz nas Gifs abaixo.
+
 ### 1. Automação E2E com Playwright & Pytest
 
 Cenários focados em performance, execução paralela e estabilidade.
